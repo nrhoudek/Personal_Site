@@ -1,0 +1,263 @@
+/*TAG SELECTORS*/
+body {
+  color: #40514E;
+  font-family: 'Merriweather', serif;
+  font-size: 1rem; /*16*/
+  margin: 0;
+  text-align: center;
+}
+
+h1 {
+  color: #596e79;
+  font-family: 'Parisienne', cursive;
+  font-size: 5.625rem;
+  /*100% = 1em = 16px.  So, 562.5% = 5.625em = 90px, out goal; PROBLEM: em and % inherit values from their parents also causing incorrect multiplication (size) Use rem to avoid that.*/
+  margin: 50px auto 0 auto;
+}
+
+h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3.5rem; /*56px*/
+}
+
+a {
+  color: #f0ece3;
+}
+
+hr {
+  border-color: #EAF6F6;
+  border-style: none none dotted;
+  border-width: 10px;
+  width: 5%;
+  margin: 70px auto 70px auto;
+  clear: left;
+}
+
+/* Containers */
+.top-container {
+  background-color: #c7b198;
+  position: relative;
+  padding-top: 100px;
+}
+
+.middle-container {
+  background-color: #f0ece3;
+}
+
+.bottom-container {
+  background-color: #c7b198;
+  padding: 30px 0;
+}
+
+/* Headers */
+.section-header {
+  color: #596e79;
+  font-size: 3.5rem; /*56px*/
+  font-weight: bold;
+}
+
+.section-subheader {
+  color: #c7b198;
+  font-size: 2rem; /*32px*/
+}
+
+/* Hero Image and Text */
+.mountain {
+  transform: translateY(4px);
+  width: 50%;
+}
+
+.top-cloud {
+  position: absolute;
+  top: 50px;
+  right: 200px;
+}
+
+.bottom-cloud {
+  position: absolute;
+  left: 200px;
+  bottom: 300px;
+}
+
+.hero-subtext {
+  color: #596e79;
+  font-size: 2rem;  /*32px*/
+  font-weight: normal;
+}
+
+/* Profile, Skills, Education, and Hobbies Classes */
+.profile {
+  font-weight: bold;
+  line-height: 2;
+  margin: 0 auto;
+  width: 33%;
+}
+
+.text-row {
+  font-weight: bold;
+  line-height: 2;
+  margin: 100px auto;
+  text-align: left;
+  width: 50%;
+}
+
+/* Image Classes and IDs */
+#profile-image {
+  padding-top: 100px;
+  width: 50%;
+}
+
+.image-row {
+  text-align: center;
+}
+
+/* HTML, CSS, and JS Shield Images */
+.web-dev-image {
+  width: 20%;
+}
+
+/* Skills, Education, and Hobbies Immages */
+.flavor-image {
+  float: left;
+  padding-right: 30px;
+  width: 20%;
+}
+
+.contact-me {
+  font-weight: bold;
+  line-height: 2;
+  margin: 0 auto;
+  width: 50%;
+}
+
+/* Contact Button */
+.btn {
+  background-color: #596e79;
+  border-radius: 8px;
+  box-shadow: 1px 1px 5px 0 #000000;
+  color: white;
+  display: inline-block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.25rem; /*20px*/
+  padding: 8px 28px;
+  margin: 50px auto 50px auto;
+  text-align: center;
+  text-decoration: none;
+}
+
+.btn:hover {
+  border: solid 2px;
+  background-color: #f0ece3;
+  border-color: #596e79;
+  color: #596e79;
+  font-weight: bold;
+  transition-duration: 0.3s;
+}
+
+/* Footer Material */
+.footer-link {
+  display: inline-block;
+  font-size: 1.25rem; /*20px*/
+  padding: 10px 10px;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+.copyright {
+  color: #EAF6F6;
+  font-size: 0.75rem;
+  padding-bottom: 10px;
+}
+
+#icon-contributors {
+  color: #EAF6F6;
+  font-size: 0.25rem;
+}
+/* Up to Ipad size */
+@media (max-width: 1024px) {
+  body {
+    font-size: 1.5rem;
+  }
+  .top-cloud {
+    right: 100px;
+  }
+  .bottom-cloud {
+    left: 75px;
+  }
+
+  .profile {
+    width: 50%;
+  }
+  .text-row {
+    width: 75%;
+  }
+
+  .section-subheader {
+    font-size: 2.25rem;
+  }
+}
+
+/* up to Iphone X size */
+@media (max-width: 376px) {
+  h1 {
+    font-size: 5rem;
+  }
+
+  body {
+    font-size: 0.90rem;
+  }
+
+  hr {
+    width: 30%;
+  }
+/* profile formatting */
+  #profile-image {
+    width: 66%;
+  }
+  .profile {
+    width: 75%;
+  }
+
+  /* Headers */
+  .section-header {
+    font-size: 1.75rem;
+  }
+
+  .section-subheader {
+    font-size: 1.25rem;
+  }
+
+/* Hero image formatting */
+  .top-cloud {
+    right: 25px;
+    width: 25%;
+  }
+
+  .bottom-cloud {
+    bottom: 150px;
+    left: 10px;
+    width: 25%;
+  }
+
+  .mountain {
+    width: 100%;
+  }
+
+/* text formatting */
+  .text-row {
+    margin: 30px, auto;
+    width: 75%;
+  }
+
+  /* contact me formatting */
+  .contact-me {
+    width: 75%;
+  }
+/* footer formatting */
+  .footer-link {
+    font-size: 0.90rem;
+  }
+}
