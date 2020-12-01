@@ -1,2 +1,2 @@
 # Personal_Site
-Personal website for Nick Houdek
+My personal website that was created when I first started learning Front-end Web Development. 
